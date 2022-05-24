@@ -1,0 +1,95 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/ebook_1.jpg)"></div>
+			<div style="background-image:url(pages/ebook_2.jpg)"></div>
+			<div style="background-image:url(pages/ebook_3.jpg)"></div>
+			<div style="background-image:url(pages/ebook_4.jpg)"></div>
+			<div style="background-image:url(pages/ebook_5.jpg)"></div>
+			<div style="background-image:url(pages/ebook_6.jpg)"></div>
+			<div style="background-image:url(pages/ebook_7.jpg)"></div>
+			<div style="background-image:url(pages/ebook_8.jpg)"></div>
+			<div style="background-image:url(pages/ebook_9.jpg)"></div>
+			<div style="background-image:url(pages/ebook_10.jpg)"></div>
+			<div style="background-image:url(pages/ebook_11.jpg)"></div>
+			<div style="background-image:url(pages/ebook_12.jpg)"></div>
+			<div style="background-image:url(pages/ebook_13.jpg)"></div>
+			<div style="background-image:url(pages/ebook_14.jpg)"></div>
+			<div style="background-image:url(pages/ebook_15.jpg)"></div>
+			<div style="background-image:url(pages/ebook_16.jpg)"></div>
+			<div style="background-image:url(pages/ebook_17.jpg)"></div>
+			<div style="background-image:url(pages/ebook_18.jpg)"></div>
+			<div style="background-image:url(pages/ebook_19.jpg)"></div>
+			<div style="background-image:url(pages/ebook_20.jpg)"></div>
+			<div style="background-image:url(pages/ebook_21.jpg)"></div>
+			<div style="background-image:url(pages/ebook_22.jpg)"></div>
+			<div style="background-image:url(pages/ebook_23.jpg)"></div>
+			<div style="background-image:url(pages/ebook_24.jpg)"></div>
+			<div style="background-image:url(pages/ebook_25.jpg)"></div>
+			<div style="background-image:url(pages/ebook_26.jpg)"></div>
+			<div style="background-image:url(pages/ebook_27.jpg)"></div>
+			<div style="background-image:url(pages/ebook_28.jpg)"></div>
+			<div style="background-image:url(pages/ebook_29.jpg)"></div>
+			<div style="background-image:url(pages/ebook_30.jpg)"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
